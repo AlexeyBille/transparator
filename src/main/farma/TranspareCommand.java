@@ -68,7 +68,7 @@ class TranspareCommand {
             wasHereMap[x][y] = true;
 
 
-            if (chechFuzziness(x, y)) {
+            if (checkFuzziness(x, y)) {
                 // image.setPixel does not work
                 image.getBand(3).setPixel(x, y, 0F);
 
@@ -84,7 +84,7 @@ class TranspareCommand {
             }
         }
 
-        private Boolean chechFuzziness(int x, int y) {
+        private Boolean checkFuzziness(int x, int y) {
             float fuzziness = FUZZINESS;
             Float[] white = {1F, 1F, 1F};
 
