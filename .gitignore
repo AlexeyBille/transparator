@@ -1,0 +1,8 @@
+.idea
+target
+.DS_Store
+images/src/*
+!images/src/.gitkeep
+
+images/dist/*
+!images/dist/.gitkeep
